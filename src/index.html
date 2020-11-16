@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<script> </script>
+	<title>Landscape Generator</title>
+
+	<link rel="stylesheet" href="https://cdnjs.com/libraries/bttn.css">
+
+</head>
+
+<body>
+	<div class="content">
+		<div class="tab tab-midplace">
+			<div id="root"></div>
+			<div class="buttons-wrapper">
+				<button class="bttn-material-flat bttn-md bttn-success btn-new-layer">New layer</button>
+				<button class="bttn-material-flat bttn-md bttn-warning btn-edit-layer">Edit layer</button>
+				<button class="bttn-material-flat bttn-md bttn-danger btn-delete-layer">Delete layer</button>
+			</div>
+		</div>
+		<div class="tab tab-diamond">
+			<div id="diamond-square"></div>
+			<div class="points-wrapper">
+				<div class="points-header">
+					<div class="x">X</div>
+					<div class="y">Y</div>
+					<div class="y">Высота</div>
+				</div>
+				<div class="input-wrapper point-input-wrapper">
+					<input type="number" class="point" id="point-1-x" value="0">
+					<input type="number" class="point" id="point-1-y" value="0">
+					<input type="number" class="point" id="point-1-value" value="0">
+				</div>
+				<div class="input-wrapper point-input-wrapper">
+					<input type="number" class="point" id="point-2-x" value="512">
+					<input type="number" class="point" id="point-2-y" value="0">
+					<input type="number" class="point" id="point-2-value" value="0">
+				</div>
+				<div class="input-wrapper point-input-wrapper">
+					<input type="number" class="point" id="point-3-x" value="0">
+					<input type="number" class="point" id="point-3-y" value="512">
+					<input type="number" class="point" id="point-3-value" value="0">
+				</div>
+				<div class="input-wrapper point-input-wrapper">
+					<input type="number" class="point" id="point-4-x" value="512">
+					<input type="number" class="point" id="point-4-y" value="512">
+					<input type="number" class="point" id="point-4-value" value="0">
+				</div>
+
+				<button id="add-point" class="bttn-material-flat bttn-md bttn-success btn-delete-layer">Add point</button>
+			</div>
+			<div class="parameters">
+				<div class="input-wrapper">
+					<label for="R">R</label>
+					<input type="number" name="R" id="R" value="0.5">
+				</div>
+				<div class="input-wrapper">
+					<label for="R">Seed</label>
+					<input type="number" name="seed" id="seed" value="201121">
+				</div>
+				<div class="input-wrapper">
+					<label for="base-height">Base level</label>
+					<input type="number" name="base-height" id="base-height" value="0">
+				</div>
+				<div class="input-wrapper">
+					<label for="chunk-size">Chunk size</label>
+					<input type="number" name="chunk-size" id="chunk-size" value="8">
+				</div>
+				<div class="input-wrapper">
+					<label for="filter">Filter window</label>
+					<input type="number" name="filter" id="filter" value="2">
+				</div>
+				<button id="render" class="bttn-material-flat bttn-md bttn-warning btn-delete-layer">Render</button>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
